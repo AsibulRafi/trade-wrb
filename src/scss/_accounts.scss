@@ -501,6 +501,9 @@
     p {
       font-size: 1.4rem;
       font-weight: 500;
+      @include breakpoint-down(small) {
+        text-align: left;
+      }
     }
     .advantage__info {
       display: flex;

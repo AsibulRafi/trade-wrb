@@ -2457,6 +2457,12 @@ header .nav__links-lists li .wb-btn:hover {
   font-weight: 500;
 }
 
+@media (max-width: 39.9375rem) {
+  .accounts__advantages-1 p {
+    text-align: left;
+  }
+}
+
 .accounts__advantages-1 .advantage__info {
   display: -webkit-box;
   display: -ms-flexbox;
