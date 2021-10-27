@@ -8,20 +8,30 @@ export const Data = [
   {
     id: 2,
     question: "Which types of accounts are available?",
-    answer:
-      "Three kinds of accounts are offered by No Name 1:>Mini Account - minimum deposit at $500 USD.>Classic Account - minimum deposit at $5000 USD.>Premium Account - minimum deposit at $20000 USD.",
+    answer: "Three kinds of accounts are offered by No Name ",
+    list1: "Mini Account - minimum deposit at $500 USD.",
+    list2: "Classic Account - minimum deposit at $5000 USD.",
+    list3: "Premium Account - minimum deposit at $20000 USD",
   },
   {
     id: 3,
     question: "Which platform should you use?",
     answer:
-      "There are a variety of different platforms available from No name 1 to meet the requirements of different traders with different circumstances. No name 1 MetaTrader 4 - Download this popular, world-renowned Forex desktop platform if you predominately trade in foreign currencies. It is both user-friendly and state-of-the-art.No name 1 Mobile - this solution provides apps for Android, tablets, and iPhone, enabling traders to trade from anywhere in the world, from a variety of devices.",
+      "There are a variety of different platforms available from No name 1 to meet the requirements of different traders with different circumstances. .",
+    list1:
+      "No name 1 MetaTrader 4 - Download this popular, world-renowned Forex desktop platform if you predominately trade in foreign currencies. It is both user-friendly and state-of-the-art",
+    list2:
+      "No name 1 Mobile - this solution provides apps for Android, tablets, and iPhone, enabling traders to trade from anywhere in the world, from a variety of devices.",
   },
   {
     id: 4,
     question: "What type of information do you need to give in order to trade?",
     answer:
-      "You are requested to give the following information for proof of identity upon registration:Proof of ID. A copy of your Passport, National ID or Driver’s License A copy of a utility bill or bank statement, not older than 3 months You will need to clearly indicate the beneficiary name on the No name 1- Client Agreement. It is important that the account beneficiary name corresponds to the name on the client agreement form, and also the documents for proof of identity. In addition, if you wish to withdraw funds, it must be to the same beneficiary.",
+      "You will need to clearly indicate the beneficiary name on the No name 1- Client Agreement. It is important that the account beneficiary name corresponds to the name on the client agreement form, and also the documents for proof of identity. In addition, if you wish to withdraw funds, it must be to the same beneficiary.You are requested to give the following information for proof of identity upon registration:",
+    list1:
+      "Proof of ID. A copy of your Passport, National ID or Driver’s License",
+    list2:
+      " A copy of a utility bill or bank statement, not older than 3 months",
   },
   {
     id: 5,

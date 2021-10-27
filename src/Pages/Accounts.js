@@ -361,7 +361,7 @@ const Accounts = () => {
         <div className="accounts__ways-heading">
           <h2>
             There are 3 different ways to fund <br />
-            your No name 1
+            your No name 1 account
           </h2>
           <hr />
         </div>

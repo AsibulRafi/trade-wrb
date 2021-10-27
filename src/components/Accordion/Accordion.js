@@ -24,6 +24,11 @@ const Accordion = () => {
               {clicked === item.id ? (
                 <div className="accordion__dropDown">
                   <p>{item.answer}</p>
+                  <ul>
+                    <li>{item.list1}</li>
+                    <li>{item.list2}</li>
+                    <li>{item.list3}</li>
+                  </ul>
                 </div>
               ) : null}
             </div>
