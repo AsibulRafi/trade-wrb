@@ -53,10 +53,14 @@ const Footer = () => {
             <h4>RESOURSES</h4>
             <ul className="footer__links-list">
               <li>
-                <Link to="/terms">Terms and Conditions</Link>
+                <Link to="/terms" onClick={() => window.scrollTo(0, 0)}>
+                  Terms and Conditions
+                </Link>
               </li>
               <li>
-                <Link to="/terms">Privacy Policy</Link>
+                <Link to="/terms" onClick={() => window.scrollTo(0, 1500)}>
+                  Privacy Policy
+                </Link>
               </li>
             </ul>
           </div>

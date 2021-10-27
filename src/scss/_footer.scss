@@ -4,6 +4,12 @@
   position: relative;
   &__wrapper {
     padding: 5rem 0rem;
+    @include breakpoint-down(medium) {
+      padding: 5rem 2rem;
+    }
+    @include breakpoint-down(small) {
+      padding: 5rem 1rem;
+    }
   }
   &__links {
     display: flex;
