@@ -11,6 +11,46 @@ const Accordion = () => {
 
     setClicked(index)
   }
+  const render = (item) => {
+    if (item.id === 2) {
+      return (
+        <div className="accordion__dropDown">
+          <p>{item.answer}</p>
+          <ul>
+            <li>{item.list1}</li>
+            <li>{item.list2}</li>
+            <li>{item.list3}</li>
+          </ul>
+        </div>
+      )
+    } else if (item.id === 3) {
+      return (
+        <div className="accordion__dropDown">
+          <p>{item.answer}</p>
+          <ul>
+            <li>{item.list1}</li>
+            <li>{item.list2}</li>
+          </ul>
+        </div>
+      )
+    } else if (item.id === 4) {
+      return (
+        <div className="accordion__dropDown">
+          <p>{item.answer}</p>
+          <ul>
+            <li>{item.list1}</li>
+            <li>{item.list2}</li>
+          </ul>
+        </div>
+      )
+    } else {
+      return (
+        <div className="accordion__dropDown">
+          <p>{item.answer}</p>
+        </div>
+      )
+    }
+  }
   return (
     <div className="accordion__section">
       <div className="accordion__container">
@@ -21,16 +61,7 @@ const Accordion = () => {
                 <h1>{item.question}</h1>
                 <span>{clicked === item.id ? <FiMinus /> : <FiPlus />}</span>
               </div>
-              {clicked === item.id ? (
-                <div className="accordion__dropDown">
-                  <p>{item.answer}</p>
-                  <ul>
-                    <li>{item.list1}</li>
-                    <li>{item.list2}</li>
-                    <li>{item.list3}</li>
-                  </ul>
-                </div>
-              ) : null}
+              {clicked === item.id ? render(item) : null}
             </div>
           )
         })}
