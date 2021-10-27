@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { useEffect } from "react"
 import PrivacyContent1 from "../components/Privacy/PrivacyContent1"
 import PrivacyContent2 from "../components/Privacy/PrivacyContent2"
 import TermsContent1 from "../components/Terms/TermsContent1"
