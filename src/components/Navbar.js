@@ -53,11 +53,6 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/terms" onClick={toggle}>
-                Education
-              </Link>
-            </li>
-            <li>
-              <Link to="/terms" onClick={toggle}>
                 RESOURSES
               </Link>
             </li>
