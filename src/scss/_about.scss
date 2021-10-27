@@ -25,19 +25,6 @@
         font-size: 3.8rem;
       }
     }
-    h4 {
-      font-size: 3rem;
-      font-weight: 600;
-      font-family: "Lato";
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      @include breakpoint-down(medium) {
-        font-size: 2.8rem;
-      }
-      @include breakpoint-down(small) {
-        font-size: 2.5rem;
-      }
-    }
   }
   &__content {
     &-1 {

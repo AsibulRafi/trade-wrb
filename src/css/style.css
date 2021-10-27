@@ -1646,7 +1646,7 @@ header .nav__links-lists li .wb-btn:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 10rem 1.5rem;
+    padding: 1rem 1.5rem;
   }
 }
 
@@ -2748,25 +2748,7 @@ header .nav__links-lists li .wb-btn:hover {
   }
 }
 
-.accounts__faq-content .accordion__item {
-  padding-top: 1rem;
-  border-bottom: 2px solid #51784f;
-}
-
-.accounts__faq-content .accordion__item h2 {
-  margin-bottom: 0;
-}
-
-.accounts__faq-content .accordion .open {
-  font-weight: 700;
-}
-
-.accounts__faq-content .accordion .open img {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.accounts__faq-content .accordion__question {
+.accounts__faq-content .accordion__section .accordion__container .wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2776,43 +2758,34 @@ header .nav__links-lists li .wb-btn:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  border: none;
-  margin-bottom: 2rem;
-  padding: 0.2rem;
-  font-size: 1.8rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #51784f;
+}
+
+.accounts__faq-content .accordion__section .accordion__container .wrap h1 {
   font-family: "Lato";
-  text-align: left;
-  background: transparent;
+  font-size: 2rem;
 }
 
-.accounts__faq-content .accordion__question:focus, .accounts__faq-content .accordion__question:focus-visible {
-  border: none;
-  outline: dashed 1px rgba(0, 0, 0, 0.25);
+@media (max-width: 39.9375rem) {
+  .accounts__faq-content .accordion__section .accordion__container .wrap h1 {
+    font-size: 1.8rem;
+  }
 }
 
-.accounts__faq-content .accordion__content {
-  font-size: 1.4rem;
-  line-height: 1.4;
-  padding-bottom: 1rem;
+.accounts__faq-content .accordion__section .accordion__container .wrap span {
+  color: #51784f;
 }
 
-.accounts__faq-content .accordion__collapse {
-  -webkit-transition: height 300ms ease;
-  transition: height 300ms ease;
+.accounts__faq-content .accordion__section .accordion__container .accordion__dropDown p {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
-.accounts__faq-content .accordion .collapse {
-  display: none;
-}
-
-.accounts__faq-content .accordion .collapsing {
-  height: 0;
-  overflow: hidden;
-}
-
-.accounts__faq-content .accordion .accordion__collapse.open {
-  display: block;
+@media (max-width: 39.9375rem) {
+  .accounts__faq-content .accordion__section .accordion__container .accordion__dropDown p {
+    font-size: 1.4rem;
+  }
 }
 
 .about {
@@ -2857,26 +2830,6 @@ header .nav__links-lists li .wb-btn:hover {
 @media (max-width: 39.9375rem) {
   .about__heading h2 {
     font-size: 3.8rem;
-  }
-}
-
-.about__heading h4 {
-  font-size: 3rem;
-  font-weight: 600;
-  font-family: "Lato";
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
-@media (max-width: 56.2rem) {
-  .about__heading h4 {
-    font-size: 2.8rem;
-  }
-}
-
-@media (max-width: 39.9375rem) {
-  .about__heading h4 {
-    font-size: 2.5rem;
   }
 }
 

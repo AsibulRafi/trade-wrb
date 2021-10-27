@@ -44,9 +44,6 @@ const Footer = () => {
               <li>
                 <Link to="/platforms">Web Trader</Link>
               </li>
-              <li>
-                <Link to="/platforms">Trade Mobile</Link>
-              </li>
             </ul>
           </div>
           <div className="footer__links-4">

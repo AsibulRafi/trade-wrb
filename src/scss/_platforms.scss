@@ -157,7 +157,7 @@
   padding: 10rem 0rem;
   @include breakpoint-down(small) {
     flex-direction: column;
-    padding: 10rem 1.5rem;
+    padding: 1rem 1.5rem;
   }
   &-single {
     display: flex;

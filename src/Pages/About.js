@@ -7,7 +7,6 @@ const About = () => {
         <div className="about__wrapper container">
           <div className="about__heading">
             <h2>WHO WE ARE?</h2>
-            <h4>ABOUT US</h4>
           </div>
           <div className="about__content">
             <div className="about__content-1">
