@@ -1,0 +1,74 @@
+.footer {
+  background-color: #171932;
+  color: #fff;
+  position: relative;
+  &__wrapper {
+    padding: 5rem 0rem;
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @include breakpoint-down(small) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    h4 {
+      font-family: "Lato";
+      font-size: 2.5rem;
+      color: $secondary;
+      @include breakpoint-down(small) {
+        font-size: 2rem;
+      }
+    }
+    ul {
+      list-style-type: none;
+      padding-inline-start: 0;
+      li {
+        margin-block: 1rem;
+      }
+      a {
+        color: $white;
+        &:hover {
+          color: $secondary;
+        }
+        @include breakpoint-down(small) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  &__info {
+    text-align: center;
+    &-header {
+      font-size: 2.6rem;
+      font-weight: 600;
+      margin-block: 2rem;
+    }
+    hr {
+      width: 9rem;
+      border: 1px solid $secondary;
+    }
+    &-text {
+      font-size: 1.4rem;
+      @include breakpoint-down(small) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .copyright {
+    position: absolute;
+    width: 100%;
+    background: $secondary;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 400;
+    @include breakpoint-down(small) {
+      font-size: 1.2rem;
+    }
+  }
+}

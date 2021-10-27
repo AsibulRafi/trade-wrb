@@ -1,0 +1,184 @@
+.platform__hero {
+  background-color: $primary;
+  width: 100%;
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+    padding: 20rem 0rem;
+    @include breakpoint-down(large) {
+      padding: 20rem 5rem;
+    }
+    @include breakpoint-down(small) {
+      flex-direction: column;
+      padding: 10rem 2rem;
+    }
+  }
+  &__content {
+    flex-basis: 55%;
+    margin-right: 5rem;
+    @include breakpoint-down(large) {
+      flex-basis: 50%;
+    }
+    @include breakpoint-down(small) {
+      flex-basis: 100%;
+      margin-right: 0;
+      margin-block: 5rem;
+      text-align: center;
+    }
+    h2 {
+      font-family: "Lato";
+      font-weight: 600;
+      font-size: 6rem;
+      letter-spacing: 0.2em;
+      margin-bottom: 2rem;
+      @include breakpoint-down(small) {
+        font-size: 3.5rem;
+      }
+    }
+    p {
+      word-spacing: 1rem;
+      font-size: 1.4rem;
+      @include breakpoint-down(small) {
+        font-size: 1.5rem;
+      }
+    }
+    .platform__hero__btn {
+      padding: 2rem 6rem;
+      border: 2px solid $secondary;
+      background-color: $secondary;
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+      color: $white;
+      font-weight: 500;
+      border-radius: 10px;
+      outline: none;
+      margin-top: 5rem;
+      @include breakpoint-down(medium) {
+        padding: 2rem 4rem;
+      }
+      @include breakpoint-down(small) {
+        font-size: 1.8rem;
+        padding: 1rem 3rem;
+      }
+      &:hover {
+        background-color: transparent;
+        color: $black;
+      }
+    }
+  }
+  &__image {
+    flex-basis: 40%;
+    @include breakpoint-down(large) {
+      flex-basis: 50%;
+    }
+    @include breakpoint-down(small) {
+      flex-basis: 100%;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      position: relative;
+    }
+  }
+}
+
+.platform {
+  &__wrapper {
+    padding: 5rem 0rem;
+    @include breakpoint-down(large) {
+      padding: 5rem;
+    }
+    @include breakpoint-down(small) {
+      padding: 5rem 1.5rem;
+    }
+  }
+  &__heading {
+    font-size: 4rem;
+    font-family: "Lato";
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5rem;
+    @include breakpoint-down(small) {
+      font-size: 3rem;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-basis: 100%;
+    @include breakpoint-down(small) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__text {
+    flex-basis: 70%;
+    margin-right: 5rem;
+    @include breakpoint-down(large) {
+      margin-right: 3rem;
+    }
+
+    @include breakpoint-down(small) {
+      margin-right: 0rem;
+      margin-bottom: 5rem;
+    }
+    p {
+      font-size: 1.4rem;
+      line-height: 2;
+      @include breakpoint-down(small) {
+        text-align: center;
+      }
+    }
+  }
+  &__feature {
+    flex-basis: 50%;
+
+    &-single {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 1rem;
+      }
+      p {
+        font-size: 2rem;
+        font-weight: 600;
+        font-size: "Lato";
+      }
+    }
+  }
+}
+.platform__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0rem;
+  @include breakpoint-down(small) {
+    flex-direction: column;
+    padding: 10rem 1.5rem;
+  }
+  &-single {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 4rem;
+    margin-right: 2rem;
+    background-color: $primary;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    @include breakpoint-down(small) {
+      margin-right: 0rem;
+      margin-block: 4rem;
+    }
+    h4 {
+      font-family: "Lato";
+      margin-top: 2rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+}

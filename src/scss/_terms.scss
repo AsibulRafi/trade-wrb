@@ -1,0 +1,348 @@
+.terms {
+  background: $primary;
+  &__wrapper {
+    padding: 10rem 0rem;
+    @include breakpoint-down(medium) {
+      padding: 10rem 5rem;
+    }
+    @include breakpoint-down(small) {
+      padding: 5rem 1.5rem;
+    }
+  }
+  &__heading {
+    h4 {
+      font-size: 3rem;
+      font-family: "Lato";
+      font-weight: 600;
+      color: $black;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      @include breakpoint-down(medium) {
+        font-size: 2.8rem;
+      }
+      @include breakpoint-down(small) {
+        font-size: 1.8rem;
+      }
+    }
+    h2 {
+      font-size: 6rem;
+      font-family: "Lato";
+      font-weight: 600;
+      color: $black;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      @include breakpoint-down(medium) {
+        font-size: 4.5rem;
+      }
+      @include breakpoint-down(small) {
+        font-size: 3rem;
+      }
+    }
+  }
+  &__content {
+    &-scroll {
+      height: 80rem;
+      width: 100%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      padding-right: 5rem;
+      hr {
+        width: 100%;
+        border: 2px solid $secondary;
+        margin-block: 2rem;
+      }
+      .terms__content-7 {
+        h4 {
+          font-family: "Lato";
+          font-size: 2.5rem;
+          font-weight: 600;
+          @include breakpoint-down(small) {
+            font-size: 2rem;
+          }
+        }
+        p {
+          font-size: 1.4rem;
+          line-height: 24px;
+          @include breakpoint-down(small) {
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      .terms__content-1,
+      .terms__content-2,
+      .terms__content-3,
+      .terms__content-4,
+      .terms__content-5,
+      .terms__content-6 {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-basis: 100%;
+        h4 {
+          font-family: "Lato";
+          font-size: 2.5rem;
+          font-weight: 600;
+          @include breakpoint-down(small) {
+            font-size: 2rem;
+          }
+        }
+        p {
+          font-size: 1.4rem;
+          line-height: 24px;
+          @include breakpoint-down(small) {
+            font-size: 1.2rem;
+          }
+        }
+        &-box-1 {
+          flex-basis: 50%;
+          margin-right: 2rem;
+        }
+        &-box-2 {
+          flex-basis: 45%;
+        }
+        @include breakpoint-down(medium) {
+          flex-direction: column;
+        }
+      }
+
+      table {
+        border: 2px solid $secondary;
+        text-align: center;
+        margin: 2rem auto;
+        th {
+          border-bottom: 2px solid $secondary;
+          font-size: 2rem;
+          color: $white;
+          background-color: $secondary;
+          padding: 3rem 4rem;
+          @include breakpoint-down(small) {
+            font-size: 1.6rem;
+          }
+        }
+        td {
+          border: 2px solid $secondary;
+          @include breakpoint-down(small) {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+      background-color: #eaeaea;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px #e3e3e3;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: $secondary;
+    }
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-block: 5rem;
+    @include breakpoint-down(medium) {
+      justify-content: space-around;
+    }
+  }
+  &__btn1 {
+    padding: 2rem 3rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-family: "Lato";
+    letter-spacing: 0.1em;
+    background: transparent;
+    border: 3px solid $secondary;
+    border-radius: 10px;
+    outline: none;
+    color: $secondary;
+    margin-right: 5rem;
+    @include breakpoint-down(medium) {
+      font-size: 2rem;
+    }
+    @include breakpoint-down(small) {
+      padding: 1rem 2rem;
+      font-size: 1.6rem;
+    }
+  }
+  &__btn2 {
+    padding: 2rem 3rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-family: "Lato";
+    letter-spacing: 0.1em;
+    background: $secondary;
+    border: 3px solid $secondary;
+    border-radius: 10px;
+    outline: none;
+    color: $white;
+    &:hover {
+      color: $black;
+      background: transparent;
+    }
+    @include breakpoint-down(medium) {
+      font-size: 2rem;
+    }
+    @include breakpoint-down(small) {
+      padding: 1rem 2rem;
+      font-size: 1.6rem;
+    }
+  }
+}
+.privacy {
+  padding: 10rem 0rem;
+  @include breakpoint-down(medium) {
+    padding: 10rem 5rem;
+  }
+  @include breakpoint-down(small) {
+    padding: 5rem 1.5rem;
+  }
+  &__heading {
+    h2 {
+      font-size: 6rem;
+      font-family: "Lato";
+      font-weight: 600;
+      color: $black;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      text-align: center;
+      @include breakpoint-down(medium) {
+        font-size: 4.5rem;
+      }
+      @include breakpoint-down(small) {
+        font-size: 3rem;
+      }
+    }
+    hr {
+      border: 3px solid $secondary;
+      border-radius: 10px;
+      width: 30rem;
+      margin-bottom: 5rem;
+      @include breakpoint-down(medium) {
+        width: 20rem;
+      }
+      @include breakpoint-down(small) {
+        width: 10rem;
+      }
+    }
+  }
+  .readMore__content {
+    display: none;
+  }
+  .rmOpen {
+    display: block;
+  }
+  &__content {
+    .readMore {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid $secondary;
+      margin-block: 3rem;
+      font-size: 2.8rem;
+      font-family: "Lato";
+      font-weight: 500;
+      text-transform: uppercase;
+      outline: none;
+      color: $secondary;
+      &:hover {
+        color: $black;
+      }
+      @include breakpoint-down(small) {
+        font-size: 2rem;
+      }
+    }
+    .privacy__content-1,
+    .privacy__content-2 {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-basis: 100%;
+      h4 {
+        font-family: "Lato";
+        font-size: 2.5rem;
+        font-weight: 600;
+        @include breakpoint-down(small) {
+          font-size: 2rem;
+        }
+      }
+      p {
+        font-size: 1.4rem;
+        line-height: 24px;
+        @include breakpoint-down(small) {
+          font-size: 1.2rem;
+        }
+      }
+      &-box-1 {
+        flex-basis: 50%;
+        margin-right: 2rem;
+      }
+      &-box-2 {
+        flex-basis: 45%;
+      }
+      @include breakpoint-down(medium) {
+        flex-direction: column;
+      }
+    }
+  }
+  &__btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-block: 5rem;
+  }
+  &__btn1 {
+    padding: 1.4rem 6rem;
+    font-size: 2.8rem;
+    font-weight: 500;
+    font-family: "Lato";
+    letter-spacing: 0.1em;
+    background: transparent;
+    border: 3px solid $secondary;
+    border-radius: 10px;
+    outline: none;
+    color: $secondary;
+    @include breakpoint-down(medium) {
+      padding: 1.4rem 4rem;
+      font-size: 2.5rem;
+    }
+    @include breakpoint-down(small) {
+      font-size: 2rem;
+      padding: 1rem 3rem;
+    }
+  }
+  &__btn2 {
+    padding: 1.4rem 6rem;
+    font-size: 2.8rem;
+    font-weight: 500;
+    font-family: "Lato";
+    letter-spacing: 0.1em;
+    background: $secondary;
+    border: 3px solid $secondary;
+    border-radius: 10px;
+    outline: none;
+    color: $white;
+    &:hover {
+      color: $black;
+      background: transparent;
+    }
+    @include breakpoint-down(medium) {
+      padding: 1.4rem 4rem;
+      font-size: 2.5rem;
+    }
+    @include breakpoint-down(small) {
+      font-size: 1.8rem;
+      padding: 1rem 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,214 @@
+.about {
+  background-color: $primary;
+  &__wrapper {
+    padding: 10rem 0rem;
+    @include breakpoint-down(medium) {
+      padding: 10rem 5rem;
+    }
+    @include breakpoint-down(small) {
+      padding: 5rem 1.5rem;
+    }
+  }
+  &__heading {
+    text-align: center;
+    margin-bottom: 5rem;
+    h2 {
+      font-size: 6rem;
+      font-weight: 600;
+      font-family: "Lato";
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      @include breakpoint-down(medium) {
+        font-size: 4.5rem;
+      }
+      @include breakpoint-down(small) {
+        font-size: 3.8rem;
+      }
+    }
+    h4 {
+      font-size: 3rem;
+      font-weight: 600;
+      font-family: "Lato";
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      @include breakpoint-down(medium) {
+        font-size: 2.8rem;
+      }
+      @include breakpoint-down(small) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  &__content {
+    &-1 {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-basis: 100%;
+      @include breakpoint-down(medium) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    &-2 {
+      text-align: center;
+      font-size: 1.5rem;
+      @include breakpoint-down(small) {
+        font-size: 1.4rem;
+      }
+    }
+    &-text {
+      flex-basis: 45%;
+      margin-right: 5rem;
+      @include breakpoint-down(medium) {
+        margin-right: 0rem;
+      }
+      p {
+        font-size: 1.5rem;
+        margin-top: 0rem;
+        @include breakpoint-down(medium) {
+          text-align: center;
+        }
+        @include breakpoint-down(small) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+    &-img {
+      flex-basis: 50%;
+      img {
+        width: 100%;
+        @include breakpoint-down(medium) {
+          margin-block: 2rem;
+        }
+      }
+    }
+  }
+}
+.contact {
+  padding: 10rem 0rem;
+  @include breakpoint-down(medium) {
+    padding: 10rem 5rem;
+  }
+  @include breakpoint-down(small) {
+    padding: 5rem 1.5rem;
+  }
+  &__heading {
+    font-size: 6rem;
+    font-weight: 600;
+    font-family: "Lato";
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5rem;
+    @include breakpoint-down(medium) {
+      font-size: 4.5rem;
+    }
+    @include breakpoint-down(small) {
+      font-size: 3.8rem;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-basis: 100%;
+    @include breakpoint-down(medium) {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__info {
+    &-single {
+      display: flex;
+      align-items: flex-start;
+      margin-block: 6rem;
+      @include breakpoint-down(small) {
+        margin-block: 4rem;
+      }
+      img {
+        margin-right: 2rem;
+      }
+      &-text {
+        h4 {
+          font-size: 2.5rem;
+          font-family: "Lato";
+          font-weight: 600;
+          letter-spacing: 0.1em;
+          @include breakpoint-down(small) {
+            font-size: 2rem;
+          }
+        }
+        p {
+          font-size: 1.5rem;
+          margin: 0;
+          font-weight: 500;
+          @include breakpoint-down(small) {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+  &__form {
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      input[type="text"] {
+        padding: 2rem 12rem 2rem 2rem;
+        font-size: 2rem;
+        font-weight: 500;
+        border: 4px solid $secondary;
+        outline: none;
+        border-radius: 10px;
+        letter-spacing: 0.1em;
+        color: $black;
+        margin-bottom: 3rem;
+        background: transparent;
+        @include breakpoint-down(small) {
+          font-size: 1.6rem;
+          padding: 2rem 10rem 2rem 2rem;
+        }
+      }
+      textarea {
+        padding: 2rem 12rem 7rem 2rem;
+        font-size: 2rem;
+        font-weight: 500;
+        border: 4px solid $secondary;
+        outline: none;
+        border-radius: 10px;
+        letter-spacing: 0.1em;
+        color: $black;
+        margin-bottom: 3rem;
+        background: transparent;
+        @include breakpoint-down(small) {
+          font-size: 1.6rem;
+          padding: 2rem 10rem 6rem 2rem;
+        }
+      }
+    }
+    &-btn {
+      padding: 2rem 14rem;
+      background: $secondary;
+      border: 5px solid $secondary;
+      border-radius: 10px;
+      font-size: 2rem;
+      font-weight: 600;
+      font-family: "Lato";
+      letter-spacing: 0.2em;
+      color: $white;
+      text-transform: uppercase;
+      &:hover {
+        color: $black;
+        background: transparent;
+      }
+      @include breakpoint-down(small) {
+        padding: 2rem 12rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

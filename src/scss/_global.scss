@@ -1,0 +1,43 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.8;
+  @include breakpoint-down(small) {
+    font-size: 1.4rem;
+  }
+}
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  &__1 {
+    max-width: 87.5rem;
+    margin: 0 auto;
+  }
+}

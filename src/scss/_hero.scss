@@ -1,0 +1,207 @@
+.hero {
+  background-color: $primary;
+  width: 100%;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+    padding: 20rem 0rem;
+    @include breakpoint-down(large) {
+      padding: 20rem 5rem;
+    }
+    @include breakpoint-down(small) {
+      flex-direction: column;
+      padding: 10rem 2rem;
+    }
+  }
+  &__content {
+    flex-basis: 45%;
+    margin-right: 5rem;
+    @include breakpoint-down(large) {
+      flex-basis: 50%;
+    }
+    @include breakpoint-down(small) {
+      flex-basis: 100%;
+      margin-right: 0;
+      margin-block: 5rem;
+      text-align: center;
+    }
+    h2 {
+      font-family: "Lato";
+      font-weight: 600;
+      font-size: 5rem;
+      letter-spacing: 0.2em;
+      margin-bottom: 2rem;
+      @include breakpoint-down(small) {
+        font-size: 3.5rem;
+      }
+    }
+    p {
+      word-spacing: 1rem;
+      margin-bottom: 5rem;
+      @include breakpoint-down(small) {
+        font-size: 1.5rem;
+      }
+    }
+    .hero__btn {
+      padding: 2rem 6rem;
+      border: 2px solid $secondary;
+      background-color: $secondary;
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+      color: $white;
+      font-weight: 500;
+      border-radius: 10px;
+      outline: none;
+      @include breakpoint-down(medium) {
+        padding: 2rem 4rem;
+      }
+      @include breakpoint-down(small) {
+        font-size: 1.8rem;
+        padding: 1rem 3rem;
+      }
+      &:hover {
+        background-color: transparent;
+        color: $black;
+      }
+    }
+  }
+  &__image {
+    flex-basis: 55%;
+    @include breakpoint-down(large) {
+      flex-basis: 50%;
+    }
+    @include breakpoint-down(small) {
+      flex-basis: 100%;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      position: relative;
+    }
+  }
+}
+.trading {
+  &__wrapper {
+    padding: 5rem 0rem;
+    @include breakpoint-down(medium) {
+      padding: 5rem;
+    }
+    @include breakpoint-down(medium) {
+      padding: 1rem;
+    }
+  }
+  &__content {
+    margin-bottom: 10rem;
+    text-align: center;
+    &-h1 {
+      font-size: 5rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      @include breakpoint-down(small) {
+        font-size: 3rem;
+      }
+    }
+    &-h2 {
+      font-size: 5rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      margin-left: 25rem;
+      @include breakpoint-down(small) {
+        margin-left: 0;
+        font-size: 3rem;
+      }
+    }
+    hr {
+      width: 30rem;
+      border: 3px solid $secondary;
+      border-radius: 20px;
+      margin-bottom: 5rem;
+      @include breakpoint-down(small) {
+        width: 20rem;
+      }
+    }
+    p {
+      font-size: 1.8rem;
+      @include breakpoint-down(small) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  &__cards {
+    margin-bottom: 6rem;
+    @include breakpoint-down(large) {
+      padding: 0rem 2rem;
+    }
+    @include breakpoint-down(small) {
+      padding: 0rem 1rem;
+    }
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+    background: $primary;
+    padding: 3rem;
+    border-radius: 10px;
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+    &-1,
+    &-3 {
+      @include breakpoint-down(medium) {
+        flex-direction: column;
+      }
+    }
+    &-2,
+    &-4 {
+      @include breakpoint-down(medium) {
+        flex-direction: column-reverse;
+      }
+    }
+    &-img {
+      flex-basis: 50%;
+      @include breakpoint-down(medium) {
+        flex-basis: 60%;
+      }
+      @include breakpoint-down(small) {
+        flex-basis: 100%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .tc1,
+    .tc3 {
+      margin-left: 5rem;
+      @include breakpoint-down(medium) {
+        margin-left: 0rem;
+      }
+    }
+    .tc2,
+    .tc4 {
+      margin-right: 5rem;
+      @include breakpoint-down(medium) {
+        margin-right: 0rem;
+      }
+    }
+    &-content {
+      flex-basis: 50%;
+      @include breakpoint-down(medium) {
+        flex-basis: 40%;
+        text-align: center;
+      }
+      @include breakpoint-down(small) {
+        flex-basis: 100%;
+      }
+      h4 {
+        font-family: "Lato";
+        font-size: 2rem;
+        color: $secondary;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
